@@ -1,7 +1,7 @@
 name: 'AudioPlayerUtils'
 language: objc
-
-output: "lib/audio_player.dart"
+description: Bindings for swift_api.
+output: lib/audio_player.dart
 
 headers:
   entry-points:
@@ -11,6 +11,8 @@ headers:
 
 exclude-all-by-default: true
 
-objc-interface:
+objc-interfaces:
   include:
     - AudioPlayer
+  module:
+    'AudioPlayer': 'audioplayer'
