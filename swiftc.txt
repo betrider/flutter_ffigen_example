@@ -1,0 +1,3 @@
+swiftc -c audioplayer.swift -module-name audioplayer 
+           -emit-objc-header-path audioplayer.h 
+           -emit-library -o libaudioplayer.dylib
